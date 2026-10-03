@@ -1,0 +1,82 @@
+/* ===========================
+   GENERAL BODY
+=========================== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fff5ee, #e0f7ff); /* light peach to light blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ===========================
+   DASHBOARD CONTAINER
+=========================== */
+.dashboard-container {
+    width: 90%;
+    max-width: 800px;
+    background: #ffffff; /* white card */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-container:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* ===========================
+   HEADINGS & PARAGRAPHS
+=========================== */
+.dashboard-container h2 {
+    color: #ff7f50; /* coral */
+    margin-bottom: 15px;
+}
+
+.dashboard-container p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   LOGOUT BUTTON
+=========================== */
+.logout-btn {
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #ff7f50, #87cefa);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    opacity: 0.9;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media screen and (max-width: 900px) {
+    .dashboard-container {
+        padding: 30px;
+    }
+
+    .dashboard-container p {
+        font-size: 16px;
+    }
+}
+
+.edu-icon {
+    font-size: 80px;
+    color: #ff7f50; /* coral color */
+    margin-bottom: 15px;
+}

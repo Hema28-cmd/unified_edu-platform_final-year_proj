@@ -1,0 +1,146 @@
+/* ===========================
+   GENERAL BODY
+=========================== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fff5ee, #e0f7ff); /* light peach to light blue gradient */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+.register-container {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* ===========================
+   REGISTER FORM CARD
+=========================== */
+.register-card {
+    flex: 1;
+    min-width: 300px;
+    background: #ffffff; /* white form */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover animation */
+}
+
+.register-card:hover {
+    transform: translateY(-10px) scale(1.02); /* lifts and slightly enlarges the card */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2); /* deeper shadow on hover */
+}
+
+.register-card h2 {
+    margin-bottom: 10px;
+    color: #ff7f50; /* coral color for headings */
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #ff7f50, #87cefa); /* peach to light blue gradient */
+    color: #fff;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* ===========================
+   INFO SECTION
+=========================== */
+.register-info {
+    flex: 1;
+    min-width: 300px;
+    background: linear-gradient(135deg, #ffe5d4, #e0f7ff) !important;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: #333 !important;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* add transition for smooth hover */
+}
+/* INFO CONTENT ALIGNMENT */
+.info-content {
+    max-width: 90%;
+}
+
+.register-info:hover {
+    transform: translateY(-10px) scale(1.02); /* lift and scale */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2); /* add shadow on hover */
+}
+
+/* HEADINGS */
+.register-info h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: #ff6347; /* slightly darker coral for heading */
+}
+
+/* PARAGRAPH */
+.register-info p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* INFO BOX */
+.info-box {
+    background: #ffd9c9 !important; /* slightly darker peach box */
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333 !important;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media screen and (max-width: 900px) {
+    .register-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .register-info, .register-card {
+        padding: 30px;
+    }
+}
