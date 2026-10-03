@@ -40,12 +40,12 @@ try{
 $mail->isSMTP();
 $mail->Host='smtp.gmail.com';
 $mail->SMTPAuth=true;
-$mail->Username='dhemagpc@gmail.com';
-$mail->Password='tgst socy jcrb uvnk';
+$mail->Username='unified@gmail.com'; #senders mail id
+$mail->Password='abcd e123 fghi ndls';  #set password
 $mail->SMTPSecure='tls';
 $mail->Port=587;
 
-$mail->setFrom('dhemagpc@gmail.com','Unified Edu');
+$mail->setFrom('unified@gmail.com','Unified Edu');
 $mail->addAddress($email);
 
 $mail->isHTML(true);
